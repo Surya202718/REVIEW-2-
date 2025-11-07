@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(45deg, #ff7a7a, #ffa351);
+  background-size: 100px 100px;
+}
+.page {
+  text-align: center;
+  margin-top: 3rem;
+}

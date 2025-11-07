@@ -1,0 +1,99 @@
+/* ---------- Discussions Page ---------- */
+.discussions-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  background-image: radial-gradient(#ffb347 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 3rem 2rem;
+  overflow-x: hidden;
+}
+
+.discussions-page h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+/* ---------- Layout ---------- */
+.discussions-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Categories ---------- */
+.discussion-categories {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 350px;
+}
+
+.discussion-categories h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.discussion-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.discussion-categories li {
+  font-size: 1rem;
+  color: #333;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.discussion-categories li:hover {
+  background: #f8f8f8;
+}
+
+.discussion-categories li.active {
+  background: #fff1e6;
+  color: #d9480f;
+  font-weight: 600;
+}
+
+/* ---------- Start Discussion ---------- */
+.discussion-action {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.start-btn {
+  background-color: #d9480f;
+  color: white;
+  border: none;
+  padding: 0.9rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #bf360c;
+}
+
+@media (max-width: 768px) {
+  .discussions-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

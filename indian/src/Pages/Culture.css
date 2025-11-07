@@ -1,0 +1,90 @@
+/* ---------- Culture Page (Full Screen Fix) ---------- */
+
+.culture-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  background-image: radial-gradient(#ffb347 1.5px, transparent 1.5px);
+  background-size: 30px 30px;
+  min-height: 100vh;
+  width: 100vw; /* ✅ Full width */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+/* ---------- Hero Section ---------- */
+.culture-hero {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.culture-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #d9480f;
+  margin-bottom: 1rem;
+}
+
+.culture-hero p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* ---------- Culture Sections ---------- */
+.culture-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  justify-content: center;
+}
+
+/* ---------- Card ---------- */
+.culture-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+.culture-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.culture-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.culture-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.culture-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .culture-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .culture-hero p {
+    font-size: 1rem;
+  }
+}
